@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONVERSIONES</title>
+
+    <link rel='stylesheet' type='text/css' media='screen' href='../estilos/main.css' />
+</head>
+<body>
+    <header>
+        <h1 id="ae">Conversión de número decimal</h1>
+        
+    </header>
+
+    <form method="POST" action="procesar_formulario_conversion.php" onsubmit="return validarFormularioConversion()" id="formulario_conversion">
+    <fieldset>
+        <legend> <h4>Convertir</h4></legend>
+        <label> Número decimal </label> 
+        <br> <input type="text" id="caja_decimal" name="caja_decimal"
+        required placeholder="Escribe un número">
+        
+
+        <br><br><br>
+        <input type="submit" value="Calcular">
+    </fieldset>
+</form>
+</body>
+</html>

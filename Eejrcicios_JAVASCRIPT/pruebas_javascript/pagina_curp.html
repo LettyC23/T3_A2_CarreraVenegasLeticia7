@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBTENER CURP</title>
+
+    <link rel='stylesheet' type='text/css' media='screen' href='Scripts/estilos/main.css' />
+</head>
+<body>
+    <header>
+        <h1 id="ae">Consulta de CURP</h1>
+        <p>Consulte su CURP en pocos segundos. Con solo ingresar
+            sus datos personales podrá calcular su Clave Única de 
+        Registro de Población. </p>
+    </header>
+
+    <form method="POST" action="procesar_formulario.php" onsubmit="return validarFormularioCurp()" id="formulario_curp">
+    <fieldset>
+        <legend> <h4>Datos Personales</h4></legend>
+        <label> Nombres </label> 
+        <br> <input type="text" id="caja_nombres" name="caja_nombres">
+        <br> <br>       
+        <label> Primer Apellido </label>
+        <br><input type="text" id="caja_primer_ap" name="caja_primer_ap">
+        <br><br>
+        <label> Segundo Apellido </label> 
+        <br><input type="text" id="caja_segundo_ap" name="caja_segundo_ap">
+        <br><br>
+        <label> Género </label> 
+        <br>
+        <select id="genero" name="genero">
+            <option value="0">HOMBRE</option>
+            <option value="1">MUJER</option>
+        </select>
+        <br>
+        <br>
+        <label> Fecha de Nacimiento </label>     
+        <br> <select id="dia" name="dia">
+            <option value="0"> Dia</option>
+        </select> 
+        <select id="mes" name="mes">
+            <option value="0"> Mes</option>
+        </select> 
+        <select id="año" name="año">
+            <option value="0"> Año</option>
+        </select> 
+        <br><br>
+
+        <label>Entidad Federativa</label>
+        <br>
+        <select>
+            <option value="0"> -Seleccione una opción-</option>
+        </select>
+
+        <br><br><br>
+        <input type="submit" value="Calcular CURP">
+    </fieldset>
+</form>
+</body>
+</html>

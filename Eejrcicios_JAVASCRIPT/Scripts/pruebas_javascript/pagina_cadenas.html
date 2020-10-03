@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADENA</title>
+
+    <link rel='stylesheet' type='text/css' media='screen' href='../estilos/main.css' />
+</head>
+<body>
+    <header>
+        <h1 id="ae">Leer cadena de caracteres y mostrar lo indicado</h1>
+        
+    </header>
+
+    <form method="POST" action="procesar_formulario_cadena.php" onsubmit="return validarFormularioCadena()" id="formulario_cadenas">
+    <fieldset>
+        <legend> <h4>Leer caracteres</h4></legend>
+        <label> Cadena </label> 
+        <br> <input type="text" id="caja_cadena" name="caja_cadena"
+        required placeholder="Escribe caracteres">
+        <br>
+        <br>
+        <label> Cantidad de apaciciones </label> 
+        <br>
+        <label> Letra </label> 
+        <br> <input type="text" id="caja_letra" name="caja_letra"
+        required placeholder="Escribe una letra">
+        
+        <br><br><br>
+        <input type="submit" value="Calcular">
+    </fieldset>
+</form>
+</body>
+</html>
